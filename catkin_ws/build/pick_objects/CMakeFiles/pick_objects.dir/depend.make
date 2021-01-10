@@ -28,7 +28,11 @@ pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kineti
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Pose.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/geometry_msgs/PoseStamped.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/geometry_msgs/PoseWithCovariance.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Quaternion.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Twist.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/geometry_msgs/TwistWithCovariance.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Vector3.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/move_base_msgs/MoveBaseAction.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/move_base_msgs/MoveBaseActionFeedback.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/move_base_msgs/MoveBaseActionGoal.h
@@ -36,6 +40,7 @@ pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kineti
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/move_base_msgs/MoveBaseFeedback.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/move_base_msgs/MoveBaseGoal.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/move_base_msgs/MoveBaseResult.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/nav_msgs/Odometry.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/advertise_options.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/advertise_service_options.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/assert.h

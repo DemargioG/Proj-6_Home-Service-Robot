@@ -64,6 +64,8 @@ Visualization Manager:
         Grid: true
         LaserScan: true
         Map: true
+        Marker: true
+        Path: true
         PoseArray: true
         RobotModel: true
         Value: true
@@ -113,6 +115,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        camera_link_optical:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         chassis:
           Alpha: 1
           Show Axes: false
@@ -145,11 +151,11 @@ Visualization Manager:
       Visual Enabled: true
     - Alpha: 0.699999988
       Class: rviz/Map
-      Color Scheme: map
+      Color Scheme: costmap
       Draw Behind: false
       Enabled: true
       Name: Map
-      Topic: /map
+      Topic: /move_base/global_costmap/costmap
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -159,7 +165,7 @@ Visualization Manager:
       Axes Radius: 0.00999999978
       Class: rviz/PoseArray
       Color: 255; 25; 0
-      Enabled: true
+      Enabled: false
       Head Length: 0.0700000003
       Head Radius: 0.0299999993
       Name: PoseArray
@@ -167,6 +173,37 @@ Visualization Manager:
       Shaft Radius: 0.00999999978
       Shape: Arrow (Flat)
       Topic: /particlecloud
+      Unreliable: false
+      Value: false
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /visualization_marker
+      Name: Marker
+      Namespaces:
+        basic_shapes: true
+      Queue Size: 100
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.300000012
+      Head Length: 0.200000003
+      Length: 0.300000012
+      Line Style: Lines
+      Line Width: 0.0299999993
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.0299999993
+      Shaft Diameter: 0.100000001
+      Shaft Length: 0.100000001
+      Topic: /move_base/NavfnROS/plan
       Unreliable: false
       Value: true
   Enabled: true
@@ -194,16 +231,16 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 51.2323074
+      Distance: 20.3387394
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: 0.815655053
+        Y: -5.58980799
+        Z: -0.820647359
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
@@ -232,5 +269,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1200
-  X: 163
-  Y: 15
+  X: 162
+  Y: -11

@@ -3,7 +3,7 @@
 <launch>
 
   <!-- Robot pose -->
- <arg name="x" default="7.64"/>
+  <arg name="x" default="7.64"/>
   <arg name="y" default="-4.36"/>
   <arg name="z" default="0"/>
   <arg name="roll" default="0"/>
@@ -29,12 +29,13 @@
   <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find my_robot)/urdf/my_robot.xacro'"/>
 
   <!-- Spawn My Robot -->
-  <!-- <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
         args="-urdf -param robot_description -model my_robot 
               -x $(arg x) -y $(arg y) -z $(arg z)
-              -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/> -->
+              -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/> 
 
   <!--launch rviz-->
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find my_robot)/rviz/Project2.rviz"/>
+  <!--<node name="markers" pkg="add_markers" type="add_markers" args="$(find add_markers)/src/add_markers.cpp"/>-->
 
 </launch>

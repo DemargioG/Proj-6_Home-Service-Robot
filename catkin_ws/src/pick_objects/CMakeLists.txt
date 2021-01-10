@@ -11,7 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   move_base_msgs
   actionlib
   roscpp
-  #geometry_msgs
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -208,4 +208,4 @@ include_directories(
 
 add_executable(pick_objects src/pick_objects.cpp)
 target_link_libraries(pick_objects ${catkin_LIBRARIES})
-add_dependencies(pick_objects ${pick_objects_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(pick_objects ${pick_objects_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})

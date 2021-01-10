@@ -99,8 +99,8 @@ pick_objects_EXTERNAL_OBJECTS =
 /home/workspace/catkin_ws/devel/lib/pick_objects/pick_objects: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
 /home/workspace/catkin_ws/devel/lib/pick_objects/pick_objects: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
 /home/workspace/catkin_ws/devel/lib/pick_objects/pick_objects: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/workspace/catkin_ws/devel/lib/pick_objects/pick_objects: /opt/ros/kinetic/lib/libroscpp_serialization.so
 /home/workspace/catkin_ws/devel/lib/pick_objects/pick_objects: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/workspace/catkin_ws/devel/lib/pick_objects/pick_objects: /opt/ros/kinetic/lib/libroscpp_serialization.so
 /home/workspace/catkin_ws/devel/lib/pick_objects/pick_objects: /opt/ros/kinetic/lib/librostime.so
 /home/workspace/catkin_ws/devel/lib/pick_objects/pick_objects: /opt/ros/kinetic/lib/libcpp_common.so
 /home/workspace/catkin_ws/devel/lib/pick_objects/pick_objects: /usr/lib/x86_64-linux-gnu/libboost_system.so

@@ -352,8 +352,8 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='my_robot'>
-        <pose frame=''>7.91387 -4.36731 0.099999 1.1e-05 0.000679 -3.11659</pose>
+      <!-- <model name='my_robot'>
+        <pose frame=''>7.91387 -4.36731 0.1 1.1e-05 0.000679 -3.11659</pose>
         <scale>1 1 1</scale>
         <link name='left_wheel'>
           <pose frame=''>7.91762 -4.51726 0.100001 1.1e-05 0.573224 -3.11659</pose>
@@ -373,7 +373,7 @@
           <acceleration>-0.064872 2.56136 -4.95898 -2.92618 -1.01985 0.214098</acceleration>
           <wrench>-0.979564 38.6765 -74.8805 0 -0 0</wrench>
         </link>
-      </model>
+      </model> -->
       <light name='sun'>
         <pose frame=''>0 0 10 0 -0 0</pose>
       </light>
@@ -1754,7 +1754,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose frame=''>8.80018 -3.56032 0 0 -0 0</pose>
     </model>
-    <model name='my_robot'>
+    <!--<model name='my_robot'>
       <link name='robot_footprint'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <inertial>
@@ -2193,7 +2193,7 @@
         <robotNamespace>/</robotNamespace>
       </plugin>
       <pose frame=''>7.64 -4.36 0 0 0 -3.12</pose>
-    </model>
+    </model> -->
     <model name='bookshelf'>
       <static>1</static>
       <link name='link'>
