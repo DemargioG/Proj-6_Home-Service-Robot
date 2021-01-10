@@ -13,7 +13,7 @@ You will also need Catkin to help compile the packages.
 A link to the ROS Wiki, which has a link to installation as well as helpful information, can be found below.
 http://wiki.ros.org/catkin
 
-##Packages and Files
+## Packages and Files
 
 -Shell Files
  Five shell files are in the inital folder. 
