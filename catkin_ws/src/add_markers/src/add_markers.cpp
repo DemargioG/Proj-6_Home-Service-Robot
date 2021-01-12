@@ -7,9 +7,7 @@
 
 ///***********TEST SWITCH**********///
 ///Toggle for add_marker simulation///
-bool test_add_marker = false;
-
-
+bool test_add_marker;
 
 // Create a global variable to store the position.
 geometry_msgs::Point pose;
@@ -25,9 +23,9 @@ bool drop_off = false;
 // Set a Tolerance threshold incase the robot is not perfectly at the location.
 double tolerance = 0.15;
 
-// Set the Pick up point and the Drop off point.
-std::vector<double> goal_pickup (2,0.0);//{5.0, -5.0}
-std::vector<double> goal_dropoff(2,0.0);//{0.0, -4.5}
+// Initalize the Pick up point and the Drop off point. (C++ 98)
+std::vector<double> goal_pickup (2,0.0);
+std::vector<double> goal_dropoff(2,0.0);
 
 void set_marker(visualization_msgs::Marker &marker, std::vector<double> goal)
 {
@@ -112,7 +110,7 @@ void odom_callback(nav_msgs::Odometry odom)
   {
      if(fabs(goal_dropoff[0] - pose.x) < tolerance && fabs(goal_dropoff[1] - pose.y) < tolerance)
     {
-      //Change the Alpa to transparent thus showing the marker.
+      //Change the Alpa to opaque thus showing the marker.
       show_marker(marker);
 
       // Change phase
@@ -125,9 +123,14 @@ int main( int argc, char** argv )
 {
   ros::init(argc, argv, "basic_shapes");
   ros::NodeHandle n;
+  ros::NodeHandle nh ("~");
   ros::Rate r(10);
-  /*ros::Publisher*/ marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 1);
-
+  
+  //Gets the "test_add_marker" parameter from the user. If true, it will run Test settings. If false or no inupt, it will run the regular settings.
+  nh.getParam("test_add_marker", test_add_marker);
+  
+  
+  marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 1);
   ros::Subscriber odom_sub = n.subscribe("/odom",10,odom_callback);
 
   // Set our initial shape type to be a cube
@@ -174,6 +177,8 @@ int main( int argc, char** argv )
 
   if (test_add_marker)
   {
+    ROS_INFO("Test Mode Activated.");
+    
     set_marker(marker, goal_pickup);
     show_marker(marker);
     marker_pub.publish(marker);
@@ -188,6 +193,8 @@ int main( int argc, char** argv )
     set_marker(marker, goal_dropoff);
     show_marker(marker);
     marker_pub.publish(marker);
+
+    return 0;
   }
   else
   {
